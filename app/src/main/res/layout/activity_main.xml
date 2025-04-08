@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="12dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Moja Książka"
+        android:textColor="@color/darkGray"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ender_pearl_banner" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightBlue">
+
+        <Button
+            android:id="@+id/showDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ZOBACZ OPIS"
+            android:textSize="10sp"
+            android:backgroundTint="@color/lightBlue"
+            android:textColor="@color/teal"/>
+        <Button
+            android:id="@+id/addRemoveFromReadList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="DODAJ DO CHCĘ PRZECZYTAĆ"
+            android:textSize="10sp"
+            android:backgroundTint="@color/lightBlue"
+            android:textColor="@color/teal"/>
+        <Button
+            android:id="@+id/remind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="PRZYPOMNIJ O KSIĄŻCE"
+            android:textSize="10sp"
+            android:backgroundTint="@color/lightBlue"
+            android:textColor="@color/teal"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/additionalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Dodano do listy 'Chcę przeczytać'"
+        android:visibility="gone"
+        android:textColor="@color/green"
+        android:textSize="8sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="O Książce"
+        android:textStyle="bold"
+        android:textColor="@color/darkGray"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:text="Fascynująca powieść przygodowa, która wciągnie Cię od pierwszej strony."
+        android:textColor="@color/indigo"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightGray"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:textSize="7sp"
+        android:text="Autor: Jakub Maciaszczyk"
+        android:textColor="@color/gray" />
+
+</LinearLayout>
